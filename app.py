@@ -113,11 +113,11 @@ def create_wordlist(emer, kompani, dtl, simbole):
             for sc in specials:
                 if sc:
                     wordlist.add(f"{w1}{w2}{sc}")
-        for d_var in variante_dtl:
-            wordlist.add(f"{w1}{w2}{d_var}")
-            for sc in specials:
-                if sc:
-                    wordlist.add(f"{w1}{w2}{d_var}{sc}")
+            for d_var in variante_dtl:
+                wordlist.add(f"{w1}{w2}{d_var}")
+                for sc in specials:
+                    if sc:
+                        wordlist.add(f"{w1}{w2}{d_var}{sc}")
 
     return sorted(list(wordlist))
 
