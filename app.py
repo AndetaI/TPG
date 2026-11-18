@@ -94,9 +94,9 @@ def create_wordlist(emer, kompani, dtl, simbole):
 
     for word in base_words:
         wordlist.add(word)
-    for sc in specials:
-        if sc:
-            wordlist.add(f"{word}{sc}") 
+        for sc in specials:
+            if sc:
+                wordlist.add(f"{word}{sc}") 
 
     for d_var in variante_dtl:
         wordlist.add(f"{word}{d_var}")
