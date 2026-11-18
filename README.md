@@ -1,8 +1,16 @@
 # Targeted Password Generator
 
-A web-based application built with **Python and Flask** that generates customized password wordlists from user-provided information, such as names, company names, and dates of birth.
+A web-based application built with **Python and Flask** that generates customized password wordlists using user-provided information, such as names, company names, and dates of birth.
 
 The application demonstrates Python string manipulation, combinatorial generation, date parsing, Flask routing, HTML templating, and client-side file export.
+
+## Live Demo
+
+**Try the application here:**
+
+[https://targetedpasswordgenerator.onrender.com/](https://targetedpasswordgenerator.onrender.com/)
+
+The application is deployed using **Render** and is publicly accessible through a web browser.
 
 ## Features
 
@@ -24,6 +32,8 @@ The application demonstrates Python string manipulation, combinatorial generatio
 | Tailwind CSS | Interface styling |
 | JavaScript | Client-side TXT export |
 | Jinja2 | Dynamic HTML rendering |
+| Git & GitHub | Version control and source code management |
+| Render | Application hosting and deployment |
 
 ## Project Structure
 
@@ -38,18 +48,18 @@ password-wordlist-generator/
 └── README.md
 ```
 
-## Installation
+## Local Installation and Setup
 
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/YOUR_REPOSITORY.git
+git clone https://github.com/AndetaI/TPG.git
 ```
 
 ### 2. Navigate to the project directory
 
 ```bash
-cd password-wordlist-generator
+cd TPG-main
 ```
 
 ### 3. Create a virtual environment
@@ -76,7 +86,7 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
-If you do not have a `requirements.txt` file yet, create one containing:
+The `requirements.txt` file should contain:
 
 ```text
 Flask
@@ -99,9 +109,10 @@ http://127.0.0.1:5000
 1. Enter a name and/or company name.
 2. Optionally provide a date of birth.
 3. Enable or disable symbol and leetspeak variations.
-4. Click **Generate Passwords**.
-5. Browse the generated wordlist.
-6. Click **Export .txt** to download the results.
+4. Click **Gjenero Fjalëkalime** to generate the wordlist.
+5. Browse the generated results.
+6. Click **Export .txt** to download the results as a text file.
+7. Use **Fshij të gjitha** to clear the form and return to the initial page.
 
 ### Supported Date Formats
 
@@ -114,17 +125,31 @@ The application accepts the following date formats:
 - `YYYYMMDD`
 - `DDMMYYYY`
 
+## Deployment
+
+The application is hosted on **Render** and connected to a GitHub repository.
+
+Live URL: [https://targetedpasswordgenerator.onrender.com/](https://targetedpasswordgenerator.onrender.com/)
+
+### Updating the Deployed Application
+
+When code changes are made locally, they can be published by pushing the updated files to GitHub:
+
+```bash
+git add .
+git commit -m "Describe your changes"
+git push origin main
+```
+
+With automatic deployment enabled, Render detects the new commit and redeploys the application.
+
+Deployment status can be monitored from the Render Dashboard.
+
 ## Security Considerations
 
-This application is intended for **authorized cybersecurity education and password-strength assessments**.
+This application is intended for **authorized cybersecurity and password-strength assessments**.
 
 - Only use information you are authorized to process.
 - Do not use generated wordlists to attempt unauthorized access to accounts or systems.
 - Avoid entering real personal information or sensitive data into publicly accessible deployments.
 - Generated wordlists may contain sensitive information and should be handled securely.
-
-**Note:** This is an educational project, not a production-ready password auditing solution.
-
-## License
-
-This project is available for educational and personal use. Add a license file to the repository if you wish to specify formal reuse and distribution permissions.
